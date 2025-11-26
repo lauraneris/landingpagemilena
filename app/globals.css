@@ -1,26 +1,84 @@
 @import "tailwindcss";
 
+/* ==== Base padrão (sem @apply) ==== */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  color-scheme: dark;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ==== Container global ==== */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 72rem; /* ~ max-w-6xl */
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* ==== Utilitários custom (SEM @apply) ==== */
+
+/* Halftone backgrounds */
+.halftone-pattern {
+  background-image: radial-gradient(circle, #5a14c01a 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.halftone-pattern-dense {
+  background-image: radial-gradient(circle, #ffb38026 1px, transparent 1px);
+  background-size: 10px 10px;
+}
+
+/* Glitch */
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+.glitch-effect {
+  animation: glitch 0.3s ease-in-out infinite;
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #5a14c0 0%, #ffb380 100%);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Neon glow */
+.neon-glow {
+  box-shadow: 0 0 20px #b8c70966, 0 0 40px #b8c70933;
+}
+
+.neon-glow-hover:hover {
+  box-shadow: 0 0 30px #b8c70999, 0 0 60px #b8c7094d;
+}
+
+/* Transições suaves em hover/focus */
+* {
+  transition-property: color, background-color, border-color, transform, box-shadow;
+  transition-duration: 0.2s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
