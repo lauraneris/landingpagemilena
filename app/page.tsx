@@ -11,9 +11,7 @@ export default function HomePage() {
   return (
     <>
       <HeroSection />
-      <AuthorityBar />
       <PurpleMovesMethodology />
-      <StrategicBenefits />
       <ServicesSection />
       <SocialProof />
       <ConversionSection />

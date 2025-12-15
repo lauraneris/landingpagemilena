@@ -62,7 +62,7 @@ export function SocialProof() {
             Como pensamos crescimento
           </h2>
           <h3 className="text-2xl sm:text-3xl font-semibold mb-4">
-            Não prometemos números prontos. Prometemos método, clareza e parceria.
+            Método, clareza e parceria.
           </h3>
           <p className="text-sm sm:text-base text-[#cbcbcb] max-w-2xl mx-auto">
             Compromisso com o processo, transparência  e uma forma diferente de fazer marketing: mais estratégica, menos aleatória.

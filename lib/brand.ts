@@ -16,8 +16,8 @@ export const BRAND = {
   // Contatos principais
   contact: {
     email: "milena@agenciapurple.com",
-    phoneDisplay: "+55 (42) 99907-2597",
-    phoneRaw: "5542999072597", // só dígitos, pra URL do WhatsApp
+    phoneDisplay: "+55 (42) 98868-1929",
+    phoneRaw: "5542988681929", // só dígitos, pra URL do WhatsApp
   },
 
 

@@ -31,7 +31,7 @@ export function AboutFinalCta() {
             </h3>
             <p className="text-xs sm:text-sm text-[#cbcbcb]">
               Vamos olhar o seu cenário juntos e desenhar os primeiros movimentos.
-              Sem compromisso prévio, sem promessa vazia — só uma conversa franca
+              Sem compromisso prévio, sem promessa vazia, só uma conversa franca
               sobre o que faz sentido para o seu momento.
             </p>
           </div>

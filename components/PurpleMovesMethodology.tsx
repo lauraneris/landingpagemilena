@@ -42,11 +42,11 @@ export function PurpleMovesMethodology() {
             Purple Moves Methodology
           </h2>
           <h3 className="text-2xl sm:text-3xl font-semibold text-white mb-4">
-            Um método para tirar o marketing do modo aleatório.
+            Um método para tirar o marketing do modo aleatório e alavancar seu negócio.
           </h3>
           <p className="text-sm sm:text-base text-[#cbcbcb]">
             Em vez de apostas soltas, trabalhamos com uma sequência clara de
-            movimentos. Cada etapa existe para alimentar a próxima — do anúncio
+            movimentos. Cada etapa existe para alimentar a próxima, do anúncio
             à recorrência de compra.
           </p>
         </div>
